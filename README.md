@@ -1,1 +1,0 @@
-# kpop_wallpaper
