@@ -8,6 +8,7 @@ const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const RAW_VOTE_DAYS = 30;
 const DELETE_BATCH = 400;
+const REQUEST_LIST_SIZE = 50;
 
 const toUtc = (date) => Date.UTC(+date.slice(0, 4), +date.slice(4, 6) - 1, +date.slice(6, 8));
 const fromUtc = (ms) => new Date(ms).toISOString().slice(0, 10).replace(/-/g, "");
@@ -96,6 +97,39 @@ async function deleteQuery(db, query) {
   }
 }
 
+function requestKey(name) {
+  return name.toLowerCase().replace(/[\s/]+/g, "");
+}
+
+/** Counts each user once per group; re-running a date adds nothing thanks to the voter documents. */
+async function aggregateRequests(db, date, pagesDir) {
+  const entries = await db.collection("kpopRequestEntries").where("date", "==", date).get();
+  for (const entry of entries.docs) {
+    const {uid, name} = entry.data();
+    const key = requestKey(name);
+    if (!key) continue;
+    const ref = db.collection("kpopRequests").doc(key);
+    await db.runTransaction(async (tx) => {
+      const request = await tx.get(ref);
+      const target = request.exists && request.data().mergedInto ?
+        db.collection("kpopRequests").doc(request.data().mergedInto) : ref;
+      const voter = target.collection("voters").doc(uid);
+      const [targetDoc, voterDoc] = await Promise.all([tx.get(target), tx.get(voter)]);
+      if (voterDoc.exists) return;
+      tx.create(voter, {date});
+      if (targetDoc.exists) tx.update(target, {count: (targetDoc.data().count || 0) + 1});
+      else tx.create(target, {name: name.trim(), status: "pending", count: 1, createdAt: date});
+    });
+  }
+  const approved = await db.collection("kpopRequests").where("status", "==", "approved").get();
+  const items = approved.docs
+      .map((doc) => ({key: doc.id, name: doc.data().name, count: doc.data().count || 0}))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, REQUEST_LIST_SIZE);
+  writeJson(path.join(pagesDir, "rankings", "requests.json"), {schemaVersion: 1, items});
+  await deleteQuery(db, db.collection("kpopRequestEntries").where("date", "<", votesCutoff(date)));
+}
+
 async function main() {
   const {cert, initializeApp} = require("firebase-admin/app");
   const {getFirestore} = require("firebase-admin/firestore");
@@ -149,6 +183,7 @@ async function main() {
   // still needs last year's totals to close that year, so only older years are removed.
   await deleteQuery(db, dailyCollection.where("date", "<", `${date.slice(0, 4)}0101`));
   await deleteQuery(db, db.collection("kpopVotes").where("date", "<", votesCutoff(date)));
+  await aggregateRequests(db, date, pagesDir);
   console.log(`Aggregated ${date}`);
 }
 
@@ -159,4 +194,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = {yesterdayKst, weekOf, monthOf, yearOf, votesCutoff, buildItems};
+module.exports = {yesterdayKst, weekOf, monthOf, yearOf, votesCutoff, buildItems, requestKey};

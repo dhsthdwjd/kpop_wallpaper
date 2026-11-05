@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert");
-const {yesterdayKst, weekOf, monthOf, yearOf, votesCutoff, buildItems} = require("./kpop_rankings");
+const {yesterdayKst, weekOf, monthOf, yearOf, votesCutoff, buildItems, requestKey} = require("./kpop_rankings");
 
 test("yesterday uses the KST date", () => {
   assert.strictEqual(yesterdayKst(Date.UTC(2026, 10, 1, 15, 10)), "20261101");
@@ -35,4 +35,9 @@ test("ties share a rank and the next rank skips", () => {
   assert.deepStrictEqual(items.map((i) => [i.groupId, i.rank]),
       [["a", 1], ["b", 1], ["c", 3], ["d", 4]]);
   assert.strictEqual(items[2].prevRank, 1);
+});
+
+test("request names with different spacing and case share a key", () => {
+  assert.strictEqual(requestKey(" All Day  Project "), "alldayproject");
+  assert.strictEqual(requestKey("ALLDAY PROJECT"), "alldayproject");
 });
