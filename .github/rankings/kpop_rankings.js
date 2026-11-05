@@ -6,7 +6,8 @@ const path = require("path");
 
 const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
 const DAY_MS = 24 * 60 * 60 * 1000;
-const ARCHIVE_SIZE = 10;
+const RAW_VOTE_DAYS = 30;
+const DELETE_BATCH = 400;
 
 const toUtc = (date) => Date.UTC(+date.slice(0, 4), +date.slice(4, 6) - 1, +date.slice(6, 8));
 const fromUtc = (ms) => new Date(ms).toISOString().slice(0, 10).replace(/-/g, "");
@@ -15,7 +16,7 @@ function yesterdayKst(now = Date.now()) {
   return fromUtc(Math.floor((now + KST_OFFSET_MS) / DAY_MS) * DAY_MS - DAY_MS);
 }
 
-/** Dates of the Monday-Sunday week containing date, with its ISO week id. */
+/** Monday-Sunday week containing date. */
 function weekOf(date) {
   const ms = toUtc(date);
   const monday = ms - ((new Date(ms).getUTCDay() + 6) % 7) * DAY_MS;
@@ -23,12 +24,36 @@ function weekOf(date) {
   const thursday = new Date(monday + 3 * DAY_MS);
   const year = thursday.getUTCFullYear();
   const week = Math.ceil(((thursday - Date.UTC(year, 0, 1)) / DAY_MS + 1) / 7);
-  const label = (d) => `${d.slice(4, 6)}/${d.slice(6, 8)}`;
+  return {file: "weekly", id: `${year}-W${String(week).padStart(2, "0")}`, dates};
+}
+
+function datesBetween(startMs, endMs) {
+  const dates = [];
+  for (let ms = startMs; ms <= endMs; ms += DAY_MS) dates.push(fromUtc(ms));
+  return dates;
+}
+
+function monthOf(date) {
+  const year = +date.slice(0, 4);
+  const month = +date.slice(4, 6);
   return {
-    id: `${year}-W${String(week).padStart(2, "0")}`,
-    label: `${label(dates[0])}-${label(dates[6])}`,
-    dates,
+    file: "monthly",
+    id: `${year}-${String(month).padStart(2, "0")}`,
+    dates: datesBetween(Date.UTC(year, month - 1, 1), Date.UTC(year, month, 0)),
   };
+}
+
+function yearOf(date) {
+  const year = +date.slice(0, 4);
+  return {
+    file: "yearly",
+    id: String(year),
+    dates: datesBetween(Date.UTC(year, 0, 1), Date.UTC(year, 11, 31)),
+  };
+}
+
+function votesCutoff(date) {
+  return fromUtc(toUtc(date) - RAW_VOTE_DAYS * DAY_MS);
 }
 
 /** Sorted items; equal votes share a rank. prevRanks is {groupId: rank}. */
@@ -50,22 +75,6 @@ function buildItems(groups, votesByGroup, prevRanks = {}) {
   });
 }
 
-function buildArchive(week, items) {
-  return {
-    schemaVersion: 1,
-    period: week.id,
-    label: week.label,
-    items: items.filter((item) => item.votes > 0 && item.rank <= ARCHIVE_SIZE),
-  };
-}
-
-function mergeIndex(index, week) {
-  const weeks = (index.weeks || []).filter((entry) => entry.id !== week.id);
-  weeks.unshift({id: week.id, label: week.label});
-  weeks.sort((a, b) => b.id.localeCompare(a.id));
-  return {schemaVersion: 1, weeks};
-}
-
 function readJson(file, fallback) {
   return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : fallback;
 }
@@ -75,6 +84,16 @@ function writeJson(file, value) {
   const temp = `${file}.tmp`;
   fs.writeFileSync(temp, JSON.stringify(value));
   fs.renameSync(temp, file);
+}
+
+async function deleteQuery(db, query) {
+  for (;;) {
+    const snapshot = await query.limit(DELETE_BATCH).get();
+    if (snapshot.empty) return;
+    const batch = db.batch();
+    snapshot.docs.forEach((doc) => batch.delete(doc.ref));
+    await batch.commit();
+  }
 }
 
 async function main() {
@@ -98,34 +117,34 @@ async function main() {
   }));
   await db.collection("kpopDailyCounts").doc(date).set({date, counts});
 
-  const week = weekOf(date);
-  const refs = week.dates.filter((d) => d <= date).map((d) => db.collection("kpopDailyCounts").doc(d));
-  const totals = {};
-  for (const doc of await db.getAll(...refs)) {
-    for (const [groupId, count] of Object.entries((doc.exists && doc.data().counts) || {})) {
-      totals[groupId] = (totals[groupId] || 0) + count;
+  const dailyCollection = db.collection("kpopDailyCounts");
+  const yearDates = yearOf(date).dates.filter((d) => d <= date);
+  const docs = await db.getAll(...yearDates.map((d) => dailyCollection.doc(d)));
+  const daily = Object.fromEntries(docs.filter((doc) => doc.exists).map((doc) => [doc.id, doc.data().counts]));
+
+  for (const period of [weekOf(date), monthOf(date), yearOf(date)]) {
+    const totals = {};
+    for (const day of period.dates) {
+      for (const [groupId, count] of Object.entries(daily[day] || {})) {
+        totals[groupId] = (totals[groupId] || 0) + count;
+      }
     }
+    const file = path.join(pagesDir, "rankings", `${period.file}.json`);
+    const previous = readJson(file, {});
+    const prevRanks = previous.period === period.id ?
+      Object.fromEntries(previous.items.map((item) => [item.groupId, item.rank])) : {};
+    writeJson(file, {
+      schemaVersion: 1,
+      period: period.id,
+      updatedAt: new Date().toISOString(),
+      items: buildItems(groups, totals, prevRanks),
+    });
   }
 
-  const weeklyPath = path.join(pagesDir, "rankings", "weekly.json");
-  const previous = readJson(weeklyPath, {});
-  const prevRanks = previous.period === week.id ?
-    Object.fromEntries(previous.items.map((item) => [item.groupId, item.rank])) : {};
-  const items = buildItems(groups, totals, prevRanks);
-  writeJson(weeklyPath, {
-    schemaVersion: 1,
-    period: week.id,
-    label: week.label,
-    updatedAt: new Date().toISOString(),
-    items,
-  });
-
-  if (date === week.dates[6]) {
-    const archiveDir = path.join(pagesDir, "rankings", "archive");
-    writeJson(path.join(archiveDir, `${week.id}.json`), buildArchive(week, items));
-    const indexPath = path.join(archiveDir, "index.json");
-    writeJson(indexPath, mergeIndex(readJson(indexPath, {}), week));
-  }
+  // Keep the current year's totals and 30 days of raw votes; the first run of a new year
+  // still needs last year's totals to close that year, so only older years are removed.
+  await deleteQuery(db, dailyCollection.where("date", "<", `${date.slice(0, 4)}0101`));
+  await deleteQuery(db, db.collection("kpopVotes").where("date", "<", votesCutoff(date)));
   console.log(`Aggregated ${date} into ${week.id}`);
 }
 
@@ -136,4 +155,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = {yesterdayKst, weekOf, buildItems, buildArchive, mergeIndex};
+module.exports = {yesterdayKst, weekOf, monthOf, yearOf, votesCutoff, buildItems};
