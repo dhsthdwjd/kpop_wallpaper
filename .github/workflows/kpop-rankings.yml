@@ -1,0 +1,47 @@
+name: Aggregate K-pop votes
+
+on:
+  schedule:
+    # 00:10 Asia/Seoul
+    - cron: "10 15 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date to re-aggregate (YYYYMMDD, KST). Empty means yesterday."
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kpop-rankings
+  cancel-in-progress: false
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: .github/rankings/package-lock.json
+      - name: Install dependencies
+        working-directory: .github/rankings
+        run: npm ci --ignore-scripts
+      - name: Aggregate
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WALLPAPER }}
+          KPOP_PAGES_DIR: ${{ github.workspace }}
+          TARGET_DATE: ${{ inputs.date }}
+        run: node .github/rankings/kpop_rankings.js $TARGET_DATE
+      - name: Publish
+        run: |
+          git config user.name "kpop-rankings-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add rankings
+          git diff --cached --quiet && exit 0
+          git commit -m "Update K-pop rankings"
+          git push
