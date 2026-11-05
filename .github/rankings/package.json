@@ -1,0 +1,8 @@
+{
+  "name": "kpop-rankings",
+  "private": true,
+  "main": "kpop_rankings.js",
+  "engines": {"node": "20"},
+  "scripts": {"test": "node --test"},
+  "dependencies": {"firebase-admin": "^13.0.0"}
+}
