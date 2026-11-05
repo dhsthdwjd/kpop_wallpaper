@@ -145,7 +145,7 @@ async function main() {
   // still needs last year's totals to close that year, so only older years are removed.
   await deleteQuery(db, dailyCollection.where("date", "<", `${date.slice(0, 4)}0101`));
   await deleteQuery(db, db.collection("kpopVotes").where("date", "<", votesCutoff(date)));
-  console.log(`Aggregated ${date} into ${week.id}`);
+  console.log(`Aggregated ${date}`);
 }
 
 if (require.main === module) {
