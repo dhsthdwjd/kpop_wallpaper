@@ -111,9 +111,13 @@ async function main() {
 
   const counts = {};
   await Promise.all(groups.map(async ({groupId}) => {
-    const snapshot = await db.collection("kpopVotes")
-        .where("date", "==", date).where("groupId", "==", groupId).count().get();
-    counts[groupId] = snapshot.data().count;
+    const votes = db.collection("kpopVotes").where("date", "==", date);
+    // Votes cast before multi-select stored a single groupId.
+    const [multi, single] = await Promise.all([
+      votes.where("groupIds", "array-contains", groupId).count().get(),
+      votes.where("groupId", "==", groupId).count().get(),
+    ]);
+    counts[groupId] = multi.data().count + single.data().count;
   }));
   await db.collection("kpopDailyCounts").doc(date).set({date, counts});
 
