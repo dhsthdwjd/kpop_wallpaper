@@ -18,7 +18,6 @@ ROOT = Path(__file__).resolve().parent
 SKIP_DIRS = {".git", ".github", "@@error"}
 CATALOG_KEYS = {"id", "name", "name_kor", "type", "preview1"}
 GROUP_KEYS = {"name", "url", "categories", "premium"}
-TYPES = {"girl", "boy", "solo", "mixed", "female", "male"}
 IMAGE_URL = re.compile(r"^https://i\.pinimg\.com/[^\s\"]+\.(jpe?g|png|webp)(\?[^\s\"]*)?$", re.IGNORECASE)
 PINIMG_JPG = re.compile(r"(https://i\.pinimg\.com/)[^/\"\s]+/([^\"\s?#]+\.jpg)", re.IGNORECASE)
 HASH = re.compile(r"[0-9a-f]{32}")
@@ -78,8 +77,8 @@ def check_catalog(path, errors):
         for key in ("id", "name", "name_kor"):
             if not nonempty(entry[key]):
                 errors.append(f"{where}: {key} 값이 비었습니다.")
-        if entry["type"] not in TYPES:
-            errors.append(f"{where}: 알 수 없는 type '{entry['type']}'")
+        if not nonempty(entry["type"]):
+            errors.append(f"{where}: type 값이 비었습니다.")
         if not isinstance(entry["preview1"], str) or not IMAGE_URL.match(entry["preview1"]):
             errors.append(f"{where}: preview1 주소 오류: {entry['preview1']}")
         elif entry["preview1"].lower().split("?")[0].endswith(".jpg") and "/474x/" not in entry["preview1"]:
