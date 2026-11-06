@@ -124,9 +124,11 @@ async function aggregateRequests(db, date, pagesDir) {
   const approved = await db.collection("kpopRequests").where("status", "==", "approved").get();
   // Counts stay private: users only see names and a stage badge.
   const score = (doc) => (doc.data().count || 0) + (doc.data().bonus || 0);
-  const items = approved.docs
-      .sort((a, b) => score(b) - score(a))
-      .slice(0, REQUEST_LIST_SIZE)
+  const isDone = (doc) => doc.data().stage === "done";
+  const sorted = approved.docs.sort((a, b) => score(b) - score(a));
+  // Added artists stay listed below open requests and never count against the limit.
+  const items = sorted.filter((doc) => !isDone(doc)).slice(0, REQUEST_LIST_SIZE)
+      .concat(sorted.filter(isDone))
       .map((doc) => ({
         key: doc.id,
         name: doc.data().name,
