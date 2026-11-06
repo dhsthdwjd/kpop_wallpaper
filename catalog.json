@@ -34,7 +34,7 @@
    "nameKor": "올데이 프로젝트",
    "type": "mixed",
    "thumbnail": "https://i.pinimg.com/736x/a9/19/e4/a919e4f6b0e0707a1e30a0debee5eaad.jpg",
-   "imageCount": 362,
+   "imageCount": 300,
    "version": "828f14ee549c"
   },
   {
@@ -61,8 +61,8 @@
    "nameKor": "빌리",
    "type": "girl",
    "thumbnail": "https://i.pinimg.com/474x/51/c2/68/51c268b3a02e434cf8afc9469b220e3a.jpg",
-   "imageCount": 300,
-   "version": "9dbd7b1e89b3"
+   "imageCount": 727,
+   "version": "fb0ef4d70419"
   },
   {
    "groupId": "BOYNEXTDOOR",
@@ -88,7 +88,7 @@
    "nameKor": "권은비",
    "type": "solo",
    "thumbnail": "https://i.pinimg.com/1200x/49/1c/ea/491cea9c8b7c044ac1003311f07cfa42.jpg",
-   "imageCount": 466,
+   "imageCount": 300,
    "version": "1aca4b839d82"
   },
   {
@@ -97,8 +97,8 @@
    "nameKor": "에버글로우",
    "type": "girl",
    "thumbnail": "https://i.pinimg.com/474x/ae/86/eb/ae86eb00bf130fd672d2a2f94b5bbde5.jpg",
-   "imageCount": 300,
-   "version": "17044edbef92"
+   "imageCount": 626,
+   "version": "4208e5d6428d"
   },
   {
    "groupId": "Hearts2Hearts",
@@ -134,7 +134,7 @@
    "type": "boy",
    "thumbnail": "https://i.pinimg.com/474x/fe/ba/48/feba4897cd3184c2a09c18695dfb94cb.jpg",
    "imageCount": 212,
-   "version": "e1aae31d033a"
+   "version": "1fd974bc1c93"
   },
   {
    "groupId": "KiiiKiii",
@@ -187,8 +187,8 @@
    "nameKor": "베리베리",
    "type": "boy",
    "thumbnail": "https://i.pinimg.com/474x/ef/f7/2f/eff72fc27c5b08f57da7cc5ec8432325.jpg",
-   "imageCount": 300,
-   "version": "52c7ba0b86b8"
+   "imageCount": 1106,
+   "version": "ba7be475a5c9"
   },
   {
    "groupId": "WJSN",
@@ -196,8 +196,17 @@
    "nameKor": "우주소녀",
    "type": "girl",
    "thumbnail": "https://i.pinimg.com/474x/a3/fe/ad/a3feadc19d568795bf866c1444ddff59.jpg",
-   "imageCount": 300,
-   "version": "8ca1ce45539b"
+   "imageCount": 3074,
+   "version": "688668bad869"
+  },
+  {
+   "groupId": "WOODZ",
+   "name": "WOODZ",
+   "nameKor": "우즈",
+   "type": "solo",
+   "thumbnail": "https://i.pinimg.com/originals/57/b3/22/57b32222db74b78d6c79b673f8510116.jpg",
+   "imageCount": 630,
+   "version": "2cfbeefce425"
   },
   {
    "groupId": "XG",
@@ -205,8 +214,8 @@
    "nameKor": "엑스지",
    "type": "girl",
    "thumbnail": "https://i.pinimg.com/474x/ec/bd/a4/ecbda4486b9552f10cdc0d3667892476.jpg",
-   "imageCount": 300,
-   "version": "32d7a37c4739"
+   "imageCount": 331,
+   "version": "9275379bd95b"
   },
   {
    "groupId": "YENA",
@@ -216,6 +225,15 @@
    "thumbnail": "https://i.pinimg.com/736x/4a/54/f5/4a54f54ce9165bb4e1e8102c794861e0.jpg",
    "imageCount": 216,
    "version": "1ccd9bcd76d4"
+  },
+  {
+   "groupId": "ZICO",
+   "name": "ZICO",
+   "nameKor": "지코",
+   "type": "solo",
+   "thumbnail": "https://i.pinimg.com/originals/31/a4/6a/31a46a81aaad6e91af547a99b83f0e67.jpg",
+   "imageCount": 521,
+   "version": "aeed0bdbd0bb"
   },
   {
    "groupId": "aespa",
@@ -268,8 +286,17 @@
    "nameKor": "비투비",
    "type": "boy",
    "thumbnail": "https://i.pinimg.com/474x/13/5e/4c/135e4cadc1de5d43a281e2290d33fa27.jpg",
-   "imageCount": 300,
-   "version": "d46baceff6eb"
+   "imageCount": 746,
+   "version": "acc731484707"
+  },
+  {
+   "groupId": "chungha",
+   "name": "CHUNGHA",
+   "nameKor": "청하",
+   "type": "solo",
+   "thumbnail": "https://i.pinimg.com/originals/b7/7e/b6/b77eb62177494dd82f07549a56acc9c5.jpg",
+   "imageCount": 656,
+   "version": "02d11deba101"
   },
   {
    "groupId": "chuu",
@@ -277,7 +304,7 @@
    "nameKor": "츄",
    "type": "solo",
    "thumbnail": "https://i.pinimg.com/736x/ef/cf/c9/efcfc9351af9ff492cf8e11409578ed5.jpg",
-   "imageCount": 565,
+   "imageCount": 300,
    "version": "6225adfb007b"
   },
   {
@@ -322,8 +349,8 @@
    "nameKor": "이븐",
    "type": "boy",
    "thumbnail": "https://i.pinimg.com/474x/f2/45/89/f24589113991b43be447236f6dcc4b90.jpg",
-   "imageCount": 300,
-   "version": "e2ddb7962ce2"
+   "imageCount": 713,
+   "version": "0aa704a0f85b"
   },
   {
    "groupId": "fromis9",
@@ -367,7 +394,7 @@
    "nameKor": "아이유",
    "type": "solo",
    "thumbnail": "https://i.pinimg.com/736x/60/09/4c/60094c76cf117d0f76de3dc8b90e9767.jpg",
-   "imageCount": 2020,
+   "imageCount": 300,
    "version": "0eea6e983efb"
   },
   {
@@ -396,6 +423,15 @@
    "thumbnail": "https://i.pinimg.com/474x/3a/87/f0/3a87f084d6143485402922f5c65f71b6.jpg",
    "imageCount": 300,
    "version": "697bd578cc42"
+  },
+  {
+   "groupId": "jeonsomi",
+   "name": "SOMI",
+   "nameKor": "전소미",
+   "type": "solo",
+   "thumbnail": "https://i.pinimg.com/originals/7f/85/96/7f8596dbfcc5057a6b250388d71e36b9.jpg",
+   "imageCount": 542,
+   "version": "cf5780bb48fa"
   },
   {
    "groupId": "kep1er",
@@ -466,8 +502,8 @@
    "nameKor": "원어스",
    "type": "boy",
    "thumbnail": "https://i.pinimg.com/474x/42/78/3f/42783fb966f9b4be735dcdecf4b3cfaf.jpg",
-   "imageCount": 300,
-   "version": "7365b9c5b276"
+   "imageCount": 1094,
+   "version": "68580860fa4a"
   },
   {
    "groupId": "redvelvet",
@@ -493,8 +529,8 @@
    "nameKor": "샤이니",
    "type": "boy",
    "thumbnail": "https://i.pinimg.com/474x/9e/fe/26/9efe268cd7f1aa2a80ab61ae397cc935.jpg",
-   "imageCount": 300,
-   "version": "749c1d5167d7"
+   "imageCount": 961,
+   "version": "3de946b10c08"
   },
   {
    "groupId": "skz",
@@ -583,8 +619,8 @@
    "nameKor": "빅톤",
    "type": "boy",
    "thumbnail": "https://i.pinimg.com/474x/bd/3a/d2/bd3ad2b4ba0e796bf6d0a13be845cca6.jpg",
-   "imageCount": 300,
-   "version": "ff841e02be7f"
+   "imageCount": 510,
+   "version": "56cdb899ede6"
   },
   {
    "groupId": "viviz",
@@ -601,8 +637,8 @@
    "nameKor": "워너원",
    "type": "boy",
    "thumbnail": "https://i.pinimg.com/474x/5d/ea/a0/5deaa05a3aafdd5fc93e29637350a013.jpg",
-   "imageCount": 300,
-   "version": "91d6c96737be"
+   "imageCount": 3637,
+   "version": "801594c5e8a2"
   },
   {
    "groupId": "zb1",
