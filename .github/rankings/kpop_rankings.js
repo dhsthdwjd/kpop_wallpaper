@@ -123,7 +123,12 @@ async function aggregateRequests(db, date, pagesDir) {
   }
   const approved = await db.collection("kpopRequests").where("status", "==", "approved").get();
   const items = approved.docs
-      .map((doc) => ({key: doc.id, name: doc.data().name, count: doc.data().count || 0}))
+      .map((doc) => ({
+        key: doc.id,
+        name: doc.data().name,
+        nameKor: doc.data().nameKor || "",
+        count: (doc.data().count || 0) + (doc.data().bonus || 0),
+      }))
       .sort((a, b) => b.count - a.count)
       .slice(0, REQUEST_LIST_SIZE);
   writeJson(path.join(pagesDir, "rankings", "requests.json"), {schemaVersion: 1, items});
