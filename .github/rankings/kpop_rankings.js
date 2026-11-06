@@ -122,15 +122,17 @@ async function aggregateRequests(db, date, pagesDir) {
     });
   }
   const approved = await db.collection("kpopRequests").where("status", "==", "approved").get();
+  // Counts stay private: users only see names and a stage badge.
+  const score = (doc) => (doc.data().count || 0) + (doc.data().bonus || 0);
   const items = approved.docs
+      .sort((a, b) => score(b) - score(a))
+      .slice(0, REQUEST_LIST_SIZE)
       .map((doc) => ({
         key: doc.id,
         name: doc.data().name,
         nameKor: doc.data().nameKor || "",
-        count: (doc.data().count || 0) + (doc.data().bonus || 0),
-      }))
-      .sort((a, b) => b.count - a.count)
-      .slice(0, REQUEST_LIST_SIZE);
+        stage: doc.data().stage || "received",
+      }));
   writeJson(path.join(pagesDir, "rankings", "requests.json"), {schemaVersion: 1, items});
   await deleteQuery(db, db.collection("kpopRequestEntries").where("date", "<", votesCutoff(date)));
 }
