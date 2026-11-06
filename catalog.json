@@ -29,6 +29,15 @@
    "version": "102eb4346655"
   },
   {
+   "groupId": "ALLDAY PROJECT",
+   "name": "ALLDAY PROJECT",
+   "nameKor": "올데이 프로젝트",
+   "type": "mixed",
+   "thumbnail": "https://i.pinimg.com/originals/6b/d6/65/6bd665045819b1f5aac43217033013a9.jpg",
+   "imageCount": 300,
+   "version": "04a741d90a2e"
+  },
+  {
    "groupId": "BABYMONSTER",
    "name": "BABYMONSTER",
    "nameKor": "베이비몬스터",
@@ -36,6 +45,15 @@
    "thumbnail": "https://i.pinimg.com/474x/9d/18/30/9d1830a26c027c56030f2d351bbc5e3a.jpg",
    "imageCount": 300,
    "version": "561520cc5207"
+  },
+  {
+   "groupId": "BIBI",
+   "name": "BIBI",
+   "nameKor": "비비",
+   "type": "solo",
+   "thumbnail": "https://i.pinimg.com/originals/cb/91/c8/cb91c85dbbaade40d7ba89e9cb224353.jpg",
+   "imageCount": 260,
+   "version": "26b4f423cbb4"
   },
   {
    "groupId": "BILLLIE",
@@ -63,6 +81,15 @@
    "thumbnail": "https://i.pinimg.com/474x/27/b3/ca/27b3ca855cb8fff3263310b80e0cb6df.jpg",
    "imageCount": 300,
    "version": "4c3b2abc1baf"
+  },
+  {
+   "groupId": "EUNBI",
+   "name": "KWON EUN-BI",
+   "nameKor": "권은비",
+   "type": "solo",
+   "thumbnail": "https://i.pinimg.com/originals/fa/d4/c2/fad4c26390e875abf7c9c3f95d122330.jpg",
+   "imageCount": 300,
+   "version": "e8113523faa4"
   },
   {
    "groupId": "EVERGLOW",
@@ -182,6 +209,15 @@
    "version": "32d7a37c4739"
   },
   {
+   "groupId": "YENA",
+   "name": "YENA",
+   "nameKor": "최예나",
+   "type": "solo",
+   "thumbnail": "https://i.pinimg.com/originals/62/94/6f/62946f0754d4dd124cc1b4c30241a0e0.jpg",
+   "imageCount": 216,
+   "version": "7a7f35bc7f42"
+  },
+  {
    "groupId": "aespa",
    "name": "aespa",
    "nameKor": "에스파",
@@ -234,6 +270,15 @@
    "thumbnail": "https://i.pinimg.com/474x/13/5e/4c/135e4cadc1de5d43a281e2290d33fa27.jpg",
    "imageCount": 300,
    "version": "d46baceff6eb"
+  },
+  {
+   "groupId": "chuu",
+   "name": "chuu",
+   "nameKor": "츄",
+   "type": "solo",
+   "thumbnail": "https://i.pinimg.com/originals/17/23/97/172397a1e7b335f8e11deed3be4a9670.jpg",
+   "imageCount": 300,
+   "version": "2e4fca7b6eb3"
   },
   {
    "groupId": "cravity",
@@ -315,6 +360,15 @@
    "thumbnail": "https://i.pinimg.com/474x/f2/39/8c/f2398cb62c8363e58a33a43cd95b6b93.jpg",
    "imageCount": 300,
    "version": "67b2bd77122f"
+  },
+  {
+   "groupId": "iu",
+   "name": "IU",
+   "nameKor": "아이유",
+   "type": "solo",
+   "thumbnail": "https://i.pinimg.com/originals/6e/98/bf/6e98bfd02c099ae2d899447940668a41.jpg",
+   "imageCount": 300,
+   "version": "2b2cc2d33958"
   },
   {
    "groupId": "ive",
