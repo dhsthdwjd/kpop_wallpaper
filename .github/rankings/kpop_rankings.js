@@ -147,7 +147,12 @@ async function main() {
   const db = getFirestore();
 
   const date = process.argv[2] || yesterdayKst();
-  const groups = readJson(path.join(pagesDir, "catalog.json"), {groups: []}).groups;
+  const catalog = readJson(path.join(pagesDir, "catalog.json"), []);
+  const groups = (Array.isArray(catalog) ? catalog : catalog.groups).map((g) => ({
+    groupId: g.id || g.groupId,
+    name: g.name,
+    nameKor: g.name_kor || g.nameKor,
+  }));
   if (!groups.length) throw new Error("catalog.json has no groups");
 
   const counts = {};
