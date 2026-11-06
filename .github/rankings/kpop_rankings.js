@@ -121,10 +121,10 @@ async function aggregateRequests(db, date, pagesDir) {
       else tx.create(target, {name: name.trim(), status: "pending", count: 1, createdAt: date});
     });
   }
-  const approved = await db.collection("kpopRequests").where("status", "==", "approved").get();
+  const approved = await db.collection("kpopRequests").where("status", "in", ["approved", "added"]).get();
   // Counts stay private: users only see names and a stage badge.
   const score = (doc) => (doc.data().count || 0) + (doc.data().bonus || 0);
-  const isDone = (doc) => doc.data().stage === "done";
+  const isDone = (doc) => doc.data().status === "added" || doc.data().stage === "done";
   const sorted = approved.docs.sort((a, b) => score(b) - score(a));
   // Added artists stay listed below open requests and never count against the limit.
   const items = sorted.filter((doc) => !isDone(doc)).slice(0, REQUEST_LIST_SIZE)
@@ -133,7 +133,7 @@ async function aggregateRequests(db, date, pagesDir) {
         key: doc.id,
         name: doc.data().name,
         nameKor: doc.data().nameKor || "",
-        stage: doc.data().stage || "received",
+        stage: isDone(doc) ? "done" : doc.data().stage || "received",
       }));
   writeJson(path.join(pagesDir, "rankings", "requests.json"), {schemaVersion: 1, items});
   await deleteQuery(db, db.collection("kpopRequestEntries").where("date", "<", votesCutoff(date)));
