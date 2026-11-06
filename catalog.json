@@ -1,653 +1,74 @@
-{
- "schemaVersion": 1,
- "groups": [
-  {
-   "groupId": "&TEAM",
-   "name": "&TEAM",
-   "nameKor": "앤팀",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/8f/eb/1b/8feb1b8ab418fc6d1e307d0a903110ed.jpg",
-   "imageCount": 300,
-   "version": "3cc5294dc396"
-  },
-  {
-   "groupId": "AHOF",
-   "name": "AHOF",
-   "nameKor": "아홉",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/ef/2d/a3/ef2da3613cd6438f9c37556c74979949.jpg",
-   "imageCount": 183,
-   "version": "c69f4254469c"
-  },
-  {
-   "groupId": "ALD1",
-   "name": "ALD1",
-   "nameKor": "알디원",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/00/ae/b4/00aeb4af77fff15bdeabcdd890b631f1.jpg",
-   "imageCount": 300,
-   "version": "102eb4346655"
-  },
-  {
-   "groupId": "ALLDAY PROJECT",
-   "name": "ALLDAY PROJECT",
-   "nameKor": "올데이 프로젝트",
-   "type": "mixed",
-   "thumbnail": "https://i.pinimg.com/736x/a9/19/e4/a919e4f6b0e0707a1e30a0debee5eaad.jpg",
-   "imageCount": 300,
-   "version": "828f14ee549c"
-  },
-  {
-   "groupId": "BABYMONSTER",
-   "name": "BABYMONSTER",
-   "nameKor": "베이비몬스터",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/9d/18/30/9d1830a26c027c56030f2d351bbc5e3a.jpg",
-   "imageCount": 300,
-   "version": "561520cc5207"
-  },
-  {
-   "groupId": "BIBI",
-   "name": "BIBI",
-   "nameKor": "비비",
-   "type": "solo",
-   "thumbnail": "https://i.pinimg.com/736x/75/fa/b5/75fab52dc7c249712ff942882414c8ab.jpg",
-   "imageCount": 260,
-   "version": "2ecd87617cd2"
-  },
-  {
-   "groupId": "BILLLIE",
-   "name": "BILLLIE",
-   "nameKor": "빌리",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/51/c2/68/51c268b3a02e434cf8afc9469b220e3a.jpg",
-   "imageCount": 727,
-   "version": "fb0ef4d70419"
-  },
-  {
-   "groupId": "BOYNEXTDOOR",
-   "name": "BOYNEXTDOOR",
-   "nameKor": "보이넥스트도어",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/fe/ee/e8/feeee876a11f9de7a4195ed602768366.jpg",
-   "imageCount": 300,
-   "version": "bdb860dc7313"
-  },
-  {
-   "groupId": "CORTIS",
-   "name": "CORTIS",
-   "nameKor": "코르티스",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/27/b3/ca/27b3ca855cb8fff3263310b80e0cb6df.jpg",
-   "imageCount": 300,
-   "version": "4c3b2abc1baf"
-  },
-  {
-   "groupId": "EUNBI",
-   "name": "KWON EUN-BI",
-   "nameKor": "권은비",
-   "type": "solo",
-   "thumbnail": "https://i.pinimg.com/1200x/49/1c/ea/491cea9c8b7c044ac1003311f07cfa42.jpg",
-   "imageCount": 300,
-   "version": "1aca4b839d82"
-  },
-  {
-   "groupId": "EVERGLOW",
-   "name": "EVERGLOW",
-   "nameKor": "에버글로우",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/ae/86/eb/ae86eb00bf130fd672d2a2f94b5bbde5.jpg",
-   "imageCount": 626,
-   "version": "4208e5d6428d"
-  },
-  {
-   "groupId": "Hearts2Hearts",
-   "name": "Hearts2Hearts",
-   "nameKor": "하츠투하츠",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/4c/02/f3/4c02f3a12e64bdcc1aeb4eded2fa62fc.jpg",
-   "imageCount": 300,
-   "version": "f6172fee1a34"
-  },
-  {
-   "groupId": "KATSEYE",
-   "name": "KATSEYE",
-   "nameKor": "캣츠아이",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/94/b6/81/94b681c2ade277c258cfcd6c8d48fb74.jpg",
-   "imageCount": 300,
-   "version": "b2cf96bd1dc0"
-  },
-  {
-   "groupId": "KIOF",
-   "name": "KISS OF LIFE",
-   "nameKor": "키스 오브 라이프",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/c7/d7/ef/c7d7ef0e6230c226593c88808792f5d3.jpg",
-   "imageCount": 300,
-   "version": "062e0d820bf4"
-  },
-  {
-   "groupId": "KickFlip",
-   "name": "KickFlip",
-   "nameKor": "킥플립",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/fe/ba/48/feba4897cd3184c2a09c18695dfb94cb.jpg",
-   "imageCount": 212,
-   "version": "1fd974bc1c93"
-  },
-  {
-   "groupId": "KiiiKiii",
-   "name": "KiiiKiii",
-   "nameKor": "키키",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/68/ad/16/68ad16059185ac4aef3d15564a12e905.jpg",
-   "imageCount": 300,
-   "version": "d2fa36d36ac2"
-  },
-  {
-   "groupId": "P1Harmony",
-   "name": "P1Harmony",
-   "nameKor": "피원하모니",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/a6/73/45/a673453267e7b6dab14f13c05afe0604.jpg",
-   "imageCount": 300,
-   "version": "65f05f165ef7"
-  },
-  {
-   "groupId": "RESCENE",
-   "name": "RESCENE",
-   "nameKor": "리센느",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/99/c1/2c/99c12c3898c0521733577d1ff15149aa.jpg",
-   "imageCount": 300,
-   "version": "0be9d41ce0cf"
-  },
-  {
-   "groupId": "RIIZE",
-   "name": "RIIZE",
-   "nameKor": "라이즈",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/a8/bf/ff/a8bfff686ef845cf3c6010f6790df1bb.jpg",
-   "imageCount": 300,
-   "version": "8bf2ed22c491"
-  },
-  {
-   "groupId": "TWS",
-   "name": "TWS",
-   "nameKor": "투어스",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/f5/12/71/f51271bd073cd1c1da3b8e99a5024c0e.jpg",
-   "imageCount": 300,
-   "version": "a41c76acc3cb"
-  },
-  {
-   "groupId": "VERIVERY",
-   "name": "VERIVERY",
-   "nameKor": "베리베리",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/ef/f7/2f/eff72fc27c5b08f57da7cc5ec8432325.jpg",
-   "imageCount": 1106,
-   "version": "ba7be475a5c9"
-  },
-  {
-   "groupId": "WJSN",
-   "name": "WJSN",
-   "nameKor": "우주소녀",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/a3/fe/ad/a3feadc19d568795bf866c1444ddff59.jpg",
-   "imageCount": 3074,
-   "version": "688668bad869"
-  },
-  {
-   "groupId": "WOODZ",
-   "name": "WOODZ",
-   "nameKor": "우즈",
-   "type": "solo",
-   "thumbnail": "https://i.pinimg.com/originals/57/b3/22/57b32222db74b78d6c79b673f8510116.jpg",
-   "imageCount": 630,
-   "version": "2cfbeefce425"
-  },
-  {
-   "groupId": "XG",
-   "name": "XG",
-   "nameKor": "엑스지",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/ec/bd/a4/ecbda4486b9552f10cdc0d3667892476.jpg",
-   "imageCount": 331,
-   "version": "9275379bd95b"
-  },
-  {
-   "groupId": "YENA",
-   "name": "YENA",
-   "nameKor": "최예나",
-   "type": "solo",
-   "thumbnail": "https://i.pinimg.com/736x/4a/54/f5/4a54f54ce9165bb4e1e8102c794861e0.jpg",
-   "imageCount": 216,
-   "version": "1ccd9bcd76d4"
-  },
-  {
-   "groupId": "ZICO",
-   "name": "ZICO",
-   "nameKor": "지코",
-   "type": "solo",
-   "thumbnail": "https://i.pinimg.com/originals/31/a4/6a/31a46a81aaad6e91af547a99b83f0e67.jpg",
-   "imageCount": 521,
-   "version": "aeed0bdbd0bb"
-  },
-  {
-   "groupId": "aespa",
-   "name": "aespa",
-   "nameKor": "에스파",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/22/54/8f/22548f8c3a20aa444c859a17dd710544.jpg",
-   "imageCount": 300,
-   "version": "7ce72aaa9d08"
-  },
-  {
-   "groupId": "astro",
-   "name": "ASTRO",
-   "nameKor": "아스트로",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/6e/12/e9/6e12e964d799a0070b178d41beb9acf0.jpg",
-   "imageCount": 300,
-   "version": "e689652a231a"
-  },
-  {
-   "groupId": "ateez",
-   "name": "ATEEZ",
-   "nameKor": "에이티즈",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/7f/ac/6a/7fac6ac65f4447ab0b8750bd423fce9d.jpg",
-   "imageCount": 300,
-   "version": "380f6dd931c3"
-  },
-  {
-   "groupId": "bbgirl",
-   "name": "BB GIRLS",
-   "nameKor": "브브걸",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/5f/55/71/5f5571c02696095466b5b6a08b708c8b.jpg",
-   "imageCount": 300,
-   "version": "c38b65bd8748"
-  },
-  {
-   "groupId": "blackpink",
-   "name": "BLACKPINK",
-   "nameKor": "블랙핑크",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/6f/34/ba/6f34ba4f61e524ab4f0a91968c26d092.jpg",
-   "imageCount": 300,
-   "version": "bb28a72b11bb"
-  },
-  {
-   "groupId": "btob",
-   "name": "BTOB",
-   "nameKor": "비투비",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/13/5e/4c/135e4cadc1de5d43a281e2290d33fa27.jpg",
-   "imageCount": 746,
-   "version": "acc731484707"
-  },
-  {
-   "groupId": "chungha",
-   "name": "CHUNGHA",
-   "nameKor": "청하",
-   "type": "solo",
-   "thumbnail": "https://i.pinimg.com/originals/b7/7e/b6/b77eb62177494dd82f07549a56acc9c5.jpg",
-   "imageCount": 656,
-   "version": "02d11deba101"
-  },
-  {
-   "groupId": "chuu",
-   "name": "chuu",
-   "nameKor": "츄",
-   "type": "solo",
-   "thumbnail": "https://i.pinimg.com/736x/ef/cf/c9/efcfc9351af9ff492cf8e11409578ed5.jpg",
-   "imageCount": 300,
-   "version": "6225adfb007b"
-  },
-  {
-   "groupId": "cravity",
-   "name": "CRAVITY",
-   "nameKor": "크래비티",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/1b/4b/70/1b4b70451522ca02b3bf3100c9faf54a.jpg",
-   "imageCount": 300,
-   "version": "e31918ba3259"
-  },
-  {
-   "groupId": "day6",
-   "name": "DAY6",
-   "nameKor": "데이식스",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/c6/07/d2/c607d2d754a68504e08b4c5bd6616a2f.jpg",
-   "imageCount": 300,
-   "version": "f319dc151aba"
-  },
-  {
-   "groupId": "dreamcatcher",
-   "name": "Dreamcatcher",
-   "nameKor": "드림캐쳐",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/df/84/08/df8408ad952f0fed13d758411a853c10.jpg",
-   "imageCount": 300,
-   "version": "59bb6a4d9c36"
-  },
-  {
-   "groupId": "enhypen",
-   "name": "ENHYPEN",
-   "nameKor": "엔하이픈",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/f9/a4/ce/f9a4ceaad04089d4a24ff76b82397652.jpg",
-   "imageCount": 300,
-   "version": "bb5a4e7f2221"
-  },
-  {
-   "groupId": "evnne",
-   "name": "EVNNE",
-   "nameKor": "이븐",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/f2/45/89/f24589113991b43be447236f6dcc4b90.jpg",
-   "imageCount": 713,
-   "version": "0aa704a0f85b"
-  },
-  {
-   "groupId": "fromis9",
-   "name": "fromis_9",
-   "nameKor": "프로미스나인",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/eb/1c/8e/eb1c8e6be3f2bdc4bda4536d586b1e8d.jpg",
-   "imageCount": 300,
-   "version": "5af099e5f348"
-  },
-  {
-   "groupId": "idle",
-   "name": "I-DLE",
-   "nameKor": "아이들",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/a1/ee/5f/a1ee5f68b13b7a2184ebb13a0037a169.jpg",
-   "imageCount": 300,
-   "version": "8aa738e18c8c"
-  },
-  {
-   "groupId": "illit",
-   "name": "ILLIT",
-   "nameKor": "아일릿",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/fc/44/f4/fc44f403a98736fb53b2cea2a8a9cec2.jpg",
-   "imageCount": 300,
-   "version": "8a48204340b6"
-  },
-  {
-   "groupId": "itzy",
-   "name": "ITZY",
-   "nameKor": "있지",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/f2/39/8c/f2398cb62c8363e58a33a43cd95b6b93.jpg",
-   "imageCount": 300,
-   "version": "67b2bd77122f"
-  },
-  {
-   "groupId": "iu",
-   "name": "IU",
-   "nameKor": "아이유",
-   "type": "solo",
-   "thumbnail": "https://i.pinimg.com/736x/60/09/4c/60094c76cf117d0f76de3dc8b90e9767.jpg",
-   "imageCount": 300,
-   "version": "0eea6e983efb"
-  },
-  {
-   "groupId": "ive",
-   "name": "IVE",
-   "nameKor": "아이브",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/0c/f2/cd/0cf2cde51fb04ee7e05b6c3d294973a8.jpg",
-   "imageCount": 300,
-   "version": "a082a00a2fe8"
-  },
-  {
-   "groupId": "izna",
-   "name": "IZNA",
-   "nameKor": "이즈나",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/84/9e/db/849edb270b22f634b666245cf060a951.jpg",
-   "imageCount": 300,
-   "version": "2d9495ca2815"
-  },
-  {
-   "groupId": "izone",
-   "name": "IZ*ONE",
-   "nameKor": "아이즈원",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/3a/87/f0/3a87f084d6143485402922f5c65f71b6.jpg",
-   "imageCount": 300,
-   "version": "697bd578cc42"
-  },
-  {
-   "groupId": "jeonsomi",
-   "name": "SOMI",
-   "nameKor": "전소미",
-   "type": "solo",
-   "thumbnail": "https://i.pinimg.com/originals/7f/85/96/7f8596dbfcc5057a6b250388d71e36b9.jpg",
-   "imageCount": 542,
-   "version": "cf5780bb48fa"
-  },
-  {
-   "groupId": "kep1er",
-   "name": "Kep1er",
-   "nameKor": "케플러",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/c0/b1/d4/c0b1d4e334b45e692b739ab3ec65403b.jpg",
-   "imageCount": 300,
-   "version": "34c4cca87329"
-  },
-  {
-   "groupId": "lesserafim",
-   "name": "LE SSERAFIM",
-   "nameKor": "르세라핌",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/d4/90/65/d490659e486a9ba30cb1e8c69affd92b.jpg",
-   "imageCount": 300,
-   "version": "52c938003134"
-  },
-  {
-   "groupId": "meovv",
-   "name": "MEOVV",
-   "nameKor": "미야오",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/23/fd/91/23fd912d79e00d0b26d05b44ca16dbb2.jpg",
-   "imageCount": 300,
-   "version": "67069595f15a"
-  },
-  {
-   "groupId": "newjeans",
-   "name": "NewJeans",
-   "nameKor": "뉴진스",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/39/99/46/39994681b648a6846e314b4a5f636d3f.jpg",
-   "imageCount": 300,
-   "version": "ae6c98c1b4f4"
-  },
-  {
-   "groupId": "niziu",
-   "name": "NiziU",
-   "nameKor": "니쥬",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/b0/3e/23/b03e23202e05ff88986e1d2c97f8ed06.jpg",
-   "imageCount": 300,
-   "version": "325031a9184f"
-  },
-  {
-   "groupId": "nmixx",
-   "name": "NMIXX",
-   "nameKor": "엔믹스",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/6e/71/db/6e71db697f3c5a601a17e18db04d0b9c.jpg",
-   "imageCount": 300,
-   "version": "2b4a596cd522"
-  },
-  {
-   "groupId": "ohmygirl",
-   "name": "OH MY GIRL",
-   "nameKor": "오마이걸",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/03/5d/d2/035dd2bedfd79149bb538b5a7ec51155.jpg",
-   "imageCount": 300,
-   "version": "b6ab36028a6a"
-  },
-  {
-   "groupId": "oneus",
-   "name": "ONEUS",
-   "nameKor": "원어스",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/42/78/3f/42783fb966f9b4be735dcdecf4b3cfaf.jpg",
-   "imageCount": 1094,
-   "version": "68580860fa4a"
-  },
-  {
-   "groupId": "redvelvet",
-   "name": "Red Velvet",
-   "nameKor": "레드벨벳",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/2c/4c/88/2c4c88ecef472c996bfcd7d8c681991c.jpg",
-   "imageCount": 300,
-   "version": "5552ba1fd834"
-  },
-  {
-   "groupId": "seventeen",
-   "name": "SEVENTEEN",
-   "nameKor": "세븐틴",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/a0/b6/17/a0b61728fdb8bb1b64b21c1d3cb37e81.jpg",
-   "imageCount": 300,
-   "version": "2dfede215561"
-  },
-  {
-   "groupId": "shinee",
-   "name": "SHINee",
-   "nameKor": "샤이니",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/9e/fe/26/9efe268cd7f1aa2a80ab61ae397cc935.jpg",
-   "imageCount": 961,
-   "version": "3de946b10c08"
-  },
-  {
-   "groupId": "skz",
-   "name": "Stray Kids",
-   "nameKor": "스트레이 키즈",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/76/a7/c1/76a7c16889c91b22486d4bade4730320.jpg",
-   "imageCount": 300,
-   "version": "9c45b7457d83"
-  },
-  {
-   "groupId": "snsd",
-   "name": "Girls' Generation",
-   "nameKor": "소녀시대",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/bc/89/80/bc8980f22168d6ab120b0770921c3729.jpg",
-   "imageCount": 300,
-   "version": "7a39cc4bea3f"
-  },
-  {
-   "groupId": "stayc",
-   "name": "STAYC",
-   "nameKor": "스테이씨",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/12/bd/fc/12bdfc106d402d6ee771e44b6f86f050.jpg",
-   "imageCount": 300,
-   "version": "bb81251ba2ce"
-  },
-  {
-   "groupId": "superjunior",
-   "name": "SUPER JUNIOR",
-   "nameKor": "슈퍼주니어",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/f0/00/13/f0001398d004e6dc548e00b74dcd6c3b.jpg",
-   "imageCount": 300,
-   "version": "19b319bae010"
-  },
-  {
-   "groupId": "theboyz",
-   "name": "THE BOYZ",
-   "nameKor": "더보이즈",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/0e/6e/9c/0e6e9cd40e4b6cad259374c3c783c6b2.jpg",
-   "imageCount": 300,
-   "version": "b78926ca841e"
-  },
-  {
-   "groupId": "treasure",
-   "name": "TREASURE",
-   "nameKor": "트레저",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/6e/b4/95/6eb495c94726b35c054ecc51ddb645e8.jpg",
-   "imageCount": 300,
-   "version": "8a7759d8b51b"
-  },
-  {
-   "groupId": "triples",
-   "name": "tripleS",
-   "nameKor": "트리플에스",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/80/f2/6d/80f26d69fa840dbe3e9cfcbd2b4fe604.jpg",
-   "imageCount": 300,
-   "version": "1c163cd6c61c"
-  },
-  {
-   "groupId": "twice",
-   "name": "TWICE",
-   "nameKor": "트와이스",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/bb/47/40/bb4740fc5c93789c9685f6c143532962.jpg",
-   "imageCount": 300,
-   "version": "8aabd12f46ab"
-  },
-  {
-   "groupId": "txt",
-   "name": "TOMORROW X TOGETHER",
-   "nameKor": "투모로우바이투게더",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/4b/08/1e/4b081e46ae58b9fdf86800a8f70d2355.jpg",
-   "imageCount": 300,
-   "version": "61fe37e7ddbe"
-  },
-  {
-   "groupId": "victon",
-   "name": "VICTON",
-   "nameKor": "빅톤",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/bd/3a/d2/bd3ad2b4ba0e796bf6d0a13be845cca6.jpg",
-   "imageCount": 510,
-   "version": "56cdb899ede6"
-  },
-  {
-   "groupId": "viviz",
-   "name": "VIVIZ",
-   "nameKor": "비비지",
-   "type": "girl",
-   "thumbnail": "https://i.pinimg.com/474x/bc/80/cf/bc80cf86f8a132e033692aaea9ff61a4.jpg",
-   "imageCount": 300,
-   "version": "22c363436385"
-  },
-  {
-   "groupId": "wannaone",
-   "name": "Wanna One",
-   "nameKor": "워너원",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/5d/ea/a0/5deaa05a3aafdd5fc93e29637350a013.jpg",
-   "imageCount": 3637,
-   "version": "801594c5e8a2"
-  },
-  {
-   "groupId": "zb1",
-   "name": "ZEROBASEONE",
-   "nameKor": "제로베이스원",
-   "type": "boy",
-   "thumbnail": "https://i.pinimg.com/474x/65/7e/8d/657e8d1e9aa5b19afd152db6a009cee9.jpg",
-   "imageCount": 300,
-   "version": "bb15d471c65c"
-  }
- ]
-}
+[
+{ "id": "&TEAM", "name": "&TEAM", "name_kor": "앤팀", "type": "boy", "preview1": "https://i.pinimg.com/474x/8f/eb/1b/8feb1b8ab418fc6d1e307d0a903110ed.jpg" },
+{ "id": "AHOF", "name": "AHOF", "name_kor": "아홉", "type": "boy", "preview1": "https://i.pinimg.com/474x/ef/2d/a3/ef2da3613cd6438f9c37556c74979949.jpg" },
+{ "id": "ALD1", "name": "ALD1", "name_kor": "알디원", "type": "boy", "preview1": "https://i.pinimg.com/474x/00/ae/b4/00aeb4af77fff15bdeabcdd890b631f1.jpg" },
+{ "id": "ALLDAY PROJECT", "name": "ALLDAY PROJECT", "name_kor": "올데이 프로젝트", "type": "mixed", "preview1": "https://i.pinimg.com/736x/a9/19/e4/a919e4f6b0e0707a1e30a0debee5eaad.jpg" },
+{ "id": "BABYMONSTER", "name": "BABYMONSTER", "name_kor": "베이비몬스터", "type": "girl", "preview1": "https://i.pinimg.com/474x/9d/18/30/9d1830a26c027c56030f2d351bbc5e3a.jpg" },
+{ "id": "BIBI", "name": "BIBI", "name_kor": "비비", "type": "solo", "preview1": "https://i.pinimg.com/736x/75/fa/b5/75fab52dc7c249712ff942882414c8ab.jpg" },
+{ "id": "BILLLIE", "name": "BILLLIE", "name_kor": "빌리", "type": "girl", "preview1": "https://i.pinimg.com/474x/51/c2/68/51c268b3a02e434cf8afc9469b220e3a.jpg" },
+{ "id": "BOYNEXTDOOR", "name": "BOYNEXTDOOR", "name_kor": "보이넥스트도어", "type": "boy", "preview1": "https://i.pinimg.com/474x/fe/ee/e8/feeee876a11f9de7a4195ed602768366.jpg" },
+{ "id": "CORTIS", "name": "CORTIS", "name_kor": "코르티스", "type": "boy", "preview1": "https://i.pinimg.com/474x/27/b3/ca/27b3ca855cb8fff3263310b80e0cb6df.jpg" },
+{ "id": "EUNBI", "name": "KWON EUN-BI", "name_kor": "권은비", "type": "solo", "preview1": "https://i.pinimg.com/1200x/49/1c/ea/491cea9c8b7c044ac1003311f07cfa42.jpg" },
+{ "id": "EVERGLOW", "name": "EVERGLOW", "name_kor": "에버글로우", "type": "girl", "preview1": "https://i.pinimg.com/474x/ae/86/eb/ae86eb00bf130fd672d2a2f94b5bbde5.jpg" },
+{ "id": "Hearts2Hearts", "name": "Hearts2Hearts", "name_kor": "하츠투하츠", "type": "girl", "preview1": "https://i.pinimg.com/474x/4c/02/f3/4c02f3a12e64bdcc1aeb4eded2fa62fc.jpg" },
+{ "id": "KATSEYE", "name": "KATSEYE", "name_kor": "캣츠아이", "type": "girl", "preview1": "https://i.pinimg.com/474x/94/b6/81/94b681c2ade277c258cfcd6c8d48fb74.jpg" },
+{ "id": "KIOF", "name": "KISS OF LIFE", "name_kor": "키스 오브 라이프", "type": "girl", "preview1": "https://i.pinimg.com/474x/c7/d7/ef/c7d7ef0e6230c226593c88808792f5d3.jpg" },
+{ "id": "KickFlip", "name": "KickFlip", "name_kor": "킥플립", "type": "boy", "preview1": "https://i.pinimg.com/474x/fe/ba/48/feba4897cd3184c2a09c18695dfb94cb.jpg" },
+{ "id": "KiiiKiii", "name": "KiiiKiii", "name_kor": "키키", "type": "girl", "preview1": "https://i.pinimg.com/474x/68/ad/16/68ad16059185ac4aef3d15564a12e905.jpg" },
+{ "id": "P1Harmony", "name": "P1Harmony", "name_kor": "피원하모니", "type": "boy", "preview1": "https://i.pinimg.com/474x/a6/73/45/a673453267e7b6dab14f13c05afe0604.jpg" },
+{ "id": "RESCENE", "name": "RESCENE", "name_kor": "리센느", "type": "girl", "preview1": "https://i.pinimg.com/474x/99/c1/2c/99c12c3898c0521733577d1ff15149aa.jpg" },
+{ "id": "RIIZE", "name": "RIIZE", "name_kor": "라이즈", "type": "boy", "preview1": "https://i.pinimg.com/474x/a8/bf/ff/a8bfff686ef845cf3c6010f6790df1bb.jpg" },
+{ "id": "TWS", "name": "TWS", "name_kor": "투어스", "type": "boy", "preview1": "https://i.pinimg.com/474x/f5/12/71/f51271bd073cd1c1da3b8e99a5024c0e.jpg" },
+{ "id": "VERIVERY", "name": "VERIVERY", "name_kor": "베리베리", "type": "boy", "preview1": "https://i.pinimg.com/474x/ef/f7/2f/eff72fc27c5b08f57da7cc5ec8432325.jpg" },
+{ "id": "WJSN", "name": "WJSN", "name_kor": "우주소녀", "type": "girl", "preview1": "https://i.pinimg.com/474x/a3/fe/ad/a3feadc19d568795bf866c1444ddff59.jpg" },
+{ "id": "WOODZ", "name": "WOODZ", "name_kor": "우즈", "type": "solo", "preview1": "https://i.pinimg.com/originals/57/b3/22/57b32222db74b78d6c79b673f8510116.jpg" },
+{ "id": "XG", "name": "XG", "name_kor": "엑스지", "type": "girl", "preview1": "https://i.pinimg.com/474x/ec/bd/a4/ecbda4486b9552f10cdc0d3667892476.jpg" },
+{ "id": "YENA", "name": "YENA", "name_kor": "최예나", "type": "solo", "preview1": "https://i.pinimg.com/736x/4a/54/f5/4a54f54ce9165bb4e1e8102c794861e0.jpg" },
+{ "id": "ZICO", "name": "ZICO", "name_kor": "지코", "type": "solo", "preview1": "https://i.pinimg.com/originals/31/a4/6a/31a46a81aaad6e91af547a99b83f0e67.jpg" },
+{ "id": "aespa", "name": "aespa", "name_kor": "에스파", "type": "girl", "preview1": "https://i.pinimg.com/474x/22/54/8f/22548f8c3a20aa444c859a17dd710544.jpg" },
+{ "id": "astro", "name": "ASTRO", "name_kor": "아스트로", "type": "boy", "preview1": "https://i.pinimg.com/474x/6e/12/e9/6e12e964d799a0070b178d41beb9acf0.jpg" },
+{ "id": "ateez", "name": "ATEEZ", "name_kor": "에이티즈", "type": "boy", "preview1": "https://i.pinimg.com/474x/7f/ac/6a/7fac6ac65f4447ab0b8750bd423fce9d.jpg" },
+{ "id": "bbgirl", "name": "BB GIRLS", "name_kor": "브브걸", "type": "girl", "preview1": "https://i.pinimg.com/474x/5f/55/71/5f5571c02696095466b5b6a08b708c8b.jpg" },
+{ "id": "blackpink", "name": "BLACKPINK", "name_kor": "블랙핑크", "type": "girl", "preview1": "https://i.pinimg.com/474x/6f/34/ba/6f34ba4f61e524ab4f0a91968c26d092.jpg" },
+{ "id": "btob", "name": "BTOB", "name_kor": "비투비", "type": "boy", "preview1": "https://i.pinimg.com/474x/13/5e/4c/135e4cadc1de5d43a281e2290d33fa27.jpg" },
+{ "id": "chungha", "name": "CHUNGHA", "name_kor": "청하", "type": "solo", "preview1": "https://i.pinimg.com/originals/b7/7e/b6/b77eb62177494dd82f07549a56acc9c5.jpg" },
+{ "id": "chuu", "name": "chuu", "name_kor": "츄", "type": "solo", "preview1": "https://i.pinimg.com/736x/ef/cf/c9/efcfc9351af9ff492cf8e11409578ed5.jpg" },
+{ "id": "cravity", "name": "CRAVITY", "name_kor": "크래비티", "type": "boy", "preview1": "https://i.pinimg.com/474x/1b/4b/70/1b4b70451522ca02b3bf3100c9faf54a.jpg" },
+{ "id": "day6", "name": "DAY6", "name_kor": "데이식스", "type": "boy", "preview1": "https://i.pinimg.com/474x/c6/07/d2/c607d2d754a68504e08b4c5bd6616a2f.jpg" },
+{ "id": "dreamcatcher", "name": "Dreamcatcher", "name_kor": "드림캐쳐", "type": "girl", "preview1": "https://i.pinimg.com/474x/df/84/08/df8408ad952f0fed13d758411a853c10.jpg" },
+{ "id": "enhypen", "name": "ENHYPEN", "name_kor": "엔하이픈", "type": "boy", "preview1": "https://i.pinimg.com/474x/f9/a4/ce/f9a4ceaad04089d4a24ff76b82397652.jpg" },
+{ "id": "evnne", "name": "EVNNE", "name_kor": "이븐", "type": "boy", "preview1": "https://i.pinimg.com/474x/f2/45/89/f24589113991b43be447236f6dcc4b90.jpg" },
+{ "id": "fromis9", "name": "fromis_9", "name_kor": "프로미스나인", "type": "girl", "preview1": "https://i.pinimg.com/474x/eb/1c/8e/eb1c8e6be3f2bdc4bda4536d586b1e8d.jpg" },
+{ "id": "idle", "name": "I-DLE", "name_kor": "아이들", "type": "girl", "preview1": "https://i.pinimg.com/474x/a1/ee/5f/a1ee5f68b13b7a2184ebb13a0037a169.jpg" },
+{ "id": "illit", "name": "ILLIT", "name_kor": "아일릿", "type": "girl", "preview1": "https://i.pinimg.com/474x/fc/44/f4/fc44f403a98736fb53b2cea2a8a9cec2.jpg" },
+{ "id": "itzy", "name": "ITZY", "name_kor": "있지", "type": "girl", "preview1": "https://i.pinimg.com/474x/f2/39/8c/f2398cb62c8363e58a33a43cd95b6b93.jpg" },
+{ "id": "iu", "name": "IU", "name_kor": "아이유", "type": "solo", "preview1": "https://i.pinimg.com/736x/60/09/4c/60094c76cf117d0f76de3dc8b90e9767.jpg" },
+{ "id": "ive", "name": "IVE", "name_kor": "아이브", "type": "girl", "preview1": "https://i.pinimg.com/474x/0c/f2/cd/0cf2cde51fb04ee7e05b6c3d294973a8.jpg" },
+{ "id": "izna", "name": "IZNA", "name_kor": "이즈나", "type": "girl", "preview1": "https://i.pinimg.com/474x/84/9e/db/849edb270b22f634b666245cf060a951.jpg" },
+{ "id": "izone", "name": "IZ*ONE", "name_kor": "아이즈원", "type": "girl", "preview1": "https://i.pinimg.com/474x/3a/87/f0/3a87f084d6143485402922f5c65f71b6.jpg" },
+{ "id": "jeonsomi", "name": "SOMI", "name_kor": "전소미", "type": "solo", "preview1": "https://i.pinimg.com/originals/7f/85/96/7f8596dbfcc5057a6b250388d71e36b9.jpg" },
+{ "id": "kep1er", "name": "Kep1er", "name_kor": "케플러", "type": "girl", "preview1": "https://i.pinimg.com/474x/c0/b1/d4/c0b1d4e334b45e692b739ab3ec65403b.jpg" },
+{ "id": "lesserafim", "name": "LE SSERAFIM", "name_kor": "르세라핌", "type": "girl", "preview1": "https://i.pinimg.com/474x/d4/90/65/d490659e486a9ba30cb1e8c69affd92b.jpg" },
+{ "id": "meovv", "name": "MEOVV", "name_kor": "미야오", "type": "girl", "preview1": "https://i.pinimg.com/474x/23/fd/91/23fd912d79e00d0b26d05b44ca16dbb2.jpg" },
+{ "id": "newjeans", "name": "NewJeans", "name_kor": "뉴진스", "type": "girl", "preview1": "https://i.pinimg.com/474x/39/99/46/39994681b648a6846e314b4a5f636d3f.jpg" },
+{ "id": "niziu", "name": "NiziU", "name_kor": "니쥬", "type": "girl", "preview1": "https://i.pinimg.com/474x/b0/3e/23/b03e23202e05ff88986e1d2c97f8ed06.jpg" },
+{ "id": "nmixx", "name": "NMIXX", "name_kor": "엔믹스", "type": "girl", "preview1": "https://i.pinimg.com/474x/6e/71/db/6e71db697f3c5a601a17e18db04d0b9c.jpg" },
+{ "id": "ohmygirl", "name": "OH MY GIRL", "name_kor": "오마이걸", "type": "girl", "preview1": "https://i.pinimg.com/474x/03/5d/d2/035dd2bedfd79149bb538b5a7ec51155.jpg" },
+{ "id": "oneus", "name": "ONEUS", "name_kor": "원어스", "type": "boy", "preview1": "https://i.pinimg.com/474x/42/78/3f/42783fb966f9b4be735dcdecf4b3cfaf.jpg" },
+{ "id": "redvelvet", "name": "Red Velvet", "name_kor": "레드벨벳", "type": "girl", "preview1": "https://i.pinimg.com/474x/2c/4c/88/2c4c88ecef472c996bfcd7d8c681991c.jpg" },
+{ "id": "seventeen", "name": "SEVENTEEN", "name_kor": "세븐틴", "type": "boy", "preview1": "https://i.pinimg.com/474x/a0/b6/17/a0b61728fdb8bb1b64b21c1d3cb37e81.jpg" },
+{ "id": "shinee", "name": "SHINee", "name_kor": "샤이니", "type": "boy", "preview1": "https://i.pinimg.com/474x/9e/fe/26/9efe268cd7f1aa2a80ab61ae397cc935.jpg" },
+{ "id": "skz", "name": "Stray Kids", "name_kor": "스트레이 키즈", "type": "boy", "preview1": "https://i.pinimg.com/474x/76/a7/c1/76a7c16889c91b22486d4bade4730320.jpg" },
+{ "id": "snsd", "name": "Girls' Generation", "name_kor": "소녀시대", "type": "girl", "preview1": "https://i.pinimg.com/474x/bc/89/80/bc8980f22168d6ab120b0770921c3729.jpg" },
+{ "id": "stayc", "name": "STAYC", "name_kor": "스테이씨", "type": "girl", "preview1": "https://i.pinimg.com/474x/12/bd/fc/12bdfc106d402d6ee771e44b6f86f050.jpg" },
+{ "id": "superjunior", "name": "SUPER JUNIOR", "name_kor": "슈퍼주니어", "type": "boy", "preview1": "https://i.pinimg.com/474x/f0/00/13/f0001398d004e6dc548e00b74dcd6c3b.jpg" },
+{ "id": "theboyz", "name": "THE BOYZ", "name_kor": "더보이즈", "type": "boy", "preview1": "https://i.pinimg.com/474x/0e/6e/9c/0e6e9cd40e4b6cad259374c3c783c6b2.jpg" },
+{ "id": "treasure", "name": "TREASURE", "name_kor": "트레저", "type": "boy", "preview1": "https://i.pinimg.com/474x/6e/b4/95/6eb495c94726b35c054ecc51ddb645e8.jpg" },
+{ "id": "triples", "name": "tripleS", "name_kor": "트리플에스", "type": "girl", "preview1": "https://i.pinimg.com/474x/80/f2/6d/80f26d69fa840dbe3e9cfcbd2b4fe604.jpg" },
+{ "id": "twice", "name": "TWICE", "name_kor": "트와이스", "type": "girl", "preview1": "https://i.pinimg.com/474x/bb/47/40/bb4740fc5c93789c9685f6c143532962.jpg" },
+{ "id": "txt", "name": "TOMORROW X TOGETHER", "name_kor": "투모로우바이투게더", "type": "boy", "preview1": "https://i.pinimg.com/474x/4b/08/1e/4b081e46ae58b9fdf86800a8f70d2355.jpg" },
+{ "id": "victon", "name": "VICTON", "name_kor": "빅톤", "type": "boy", "preview1": "https://i.pinimg.com/474x/bd/3a/d2/bd3ad2b4ba0e796bf6d0a13be845cca6.jpg" },
+{ "id": "viviz", "name": "VIVIZ", "name_kor": "비비지", "type": "girl", "preview1": "https://i.pinimg.com/474x/bc/80/cf/bc80cf86f8a132e033692aaea9ff61a4.jpg" },
+{ "id": "wannaone", "name": "Wanna One", "name_kor": "워너원", "type": "boy", "preview1": "https://i.pinimg.com/474x/5d/ea/a0/5deaa05a3aafdd5fc93e29637350a013.jpg" },
+{ "id": "zb1", "name": "ZEROBASEONE", "name_kor": "제로베이스원", "type": "boy", "preview1": "https://i.pinimg.com/474x/65/7e/8d/657e8d1e9aa5b19afd152db6a009cee9.jpg" }
+]
